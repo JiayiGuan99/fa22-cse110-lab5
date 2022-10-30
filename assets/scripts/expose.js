@@ -26,7 +26,6 @@ function init() {
       case 'party-horn':
         img1.src="assets/images/party-horn.svg";
         audio.src="assets/audio/party-horn.mp3";
-        jsConfetti.addConfetti();
         break;
     }
 
@@ -55,6 +54,9 @@ function init() {
     button.addEventListener('click', ()=>
     {
       audio.play();
+      if(event.target.value == 'party-horn'){
+        jsConfetti.addConfetti();
+      }
     }
     );
   }
