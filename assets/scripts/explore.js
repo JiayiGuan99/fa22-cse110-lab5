@@ -26,8 +26,8 @@ function init() {
   });
 
   button.addEventListener('click', () => {
-    const inputText = new SpeechSynthesisUtterance(text.value);
-    synth.speak(inputText);
+    const utterThis = new SpeechSynthesisUtterance(text.value);
+    synth.speak(utterThis);
     if(synth.speaking){
       face.src = "assets/images/smiling-open.png";
     }
