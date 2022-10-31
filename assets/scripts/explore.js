@@ -15,7 +15,7 @@ function init() {
     voices = synth.getVoices();
     for (let i = 0; i < voices.length; i++) {
       const option = document.createElement('option');
-      option.textContent = `${voices[i].name} (${voices[i].lang})`; // display
+      option.textContent = `${voices[i].name} (${voices[i].lang})`;
       option.setAttribute('data-lang', voices[i].lang);
       option.setAttribute('data-name', voices[i].name);
       voiceSelect.appendChild(option);
@@ -32,10 +32,10 @@ function init() {
     }
     synth.speak(utterThis);
     utterThis.addEventListener('start', function() {
-      face.src = "assets/images/smiling-open.png";
+      img.src = "assets/images/smiling-open.png";
     });
     utterThis.addEventListener('end', function() {
-      face.src = "assets/images/smiling.png";
+      img.src = "assets/images/smiling.png";
     });
   });
 }
