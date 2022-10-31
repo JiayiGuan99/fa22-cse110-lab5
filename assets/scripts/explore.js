@@ -23,6 +23,8 @@ function init() {
   });
 
   button.addEventListener('click', () => {
+    synth.cancel();
+    img.src = "assets/images/smiling.png";
     const utterThis = new SpeechSynthesisUtterance(text.value);
     const selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
     for (let i = 0; i < voices.length ; i++) {
