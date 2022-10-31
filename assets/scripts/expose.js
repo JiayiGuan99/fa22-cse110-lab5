@@ -7,7 +7,7 @@ function init() {
   const img1 = document.querySelector('img');
   const hornSelect = document.getElementById('horn-select');
   const volumeControl = document.getElementById('volume');
-  const img2 = document.getElementsByTagName('img')[1];
+  const img2 = document.querySelectorAll('img')[1];
   const button = document.querySelector('button');
   const audio = document.querySelector('audio');
   const jsConfetti = new JSConfetti();
