@@ -48,8 +48,7 @@ function init() {
         img2.src = "assets/icons/volume-level-3.svg";
         audio.volume = event.target.value / 100;
       }
-    }
-    );
+    });
 
     button.addEventListener('click', ()=>
     {
@@ -57,8 +56,6 @@ function init() {
       if(event.target.value == 'party-horn'){
         jsConfetti.addConfetti();
       }
-    }
-    );
-  }
-  );
+    });
+  });
 }
